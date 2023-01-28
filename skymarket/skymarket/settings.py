@@ -108,30 +108,19 @@ DJOSER = {
     }
 }
 
-# Database
-# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+Database
+https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-# TODO здесь необходимо настроить подключение к БД
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql_psycopg2",
-#         "HOST": os.environ.get("DB_HOST", "localhost"),
-#         "NAME": os.environ.get("POSTGRES_NAME", "skymarket"),
-#         "PORT": os.environ.get("DB_PORT", "5432"),
-#         "USER": os.environ.get("DB_USER", "skymarket"),
-#         "PASSWORD": os.environ.get("DB_PASSWORD", "skymarket"),
-#     },
-# }
-
+TODO здесь необходимо настроить подключение к БД
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        "PASSWORD": 'postgres',
-        "HOST": 'localhost',
-        'PORT': '5432',
-    }
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "HOST": os.environ.get("DB_HOST", "localhost"),
+        "NAME": os.environ.get("POSTGRES_NAME", "skymarket"),
+        "PORT": os.environ.get("DB_PORT", "5432"),
+        "USER": os.environ.get("DB_USER", "skymarket"),
+        "PASSWORD": os.environ.get("DB_PASSWORD", "skymarket"),
+    },
 }
 
 
